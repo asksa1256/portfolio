@@ -1,0 +1,106 @@
+/* mobile_menu */
+header #navbar {display: none;}
+header .ham {display: block; top: 1%; right: 2%;}
+header .mobile-menu {display: flex; position: fixed; justify-content: center; right: -100%; top: 0; width: 100%; height: 100vh; background: #f6ce3c; z-index: 999; transition: 1s;}
+header .mobile-menu.active {right: 0;}
+header .mobile-menu .box {position: relative; left: 50%; top: 25%; transform: translate(-50%,-50%); width: 100%; height: 12.5vh; text-align: center;}
+header .mobile-menu .box h1 {position: absolute; top: -60%; left: 50%; transform: translateX(-50%); font-size: 4rem; color: rgba(255,255,255,.5); cursor: pointer; z-index: -1; transition: .5s;}
+header .mobile-menu .box h2 {font-size: 2rem; color: #000; transition: .5s;}
+header .mobile-menu .box:hover h1 {transform: translate(-50%,-30px);}
+header .mobile-menu .box:hover h2 {letter-spacing: 5px;}
+
+
+/* main */
+.main > div {width: 100%;}
+.main > div img {width: 250px;}
+.cut1, .cut2 {position: relative; width: 100%; height: 150px; display: flex; flex-wrap: wrap; align-items: center;}
+.cut1 {float: none; margin: 20px auto 80px;}
+.cut2 {margin-top: 30px;}
+.cut1 img, .cut2 img {position: absolute; top: 80%; left: 50%; transform: translate(-50%,-50%); width: 200px !important;}
+.cut1 h2, .cut2 h2 {font-size: 16px;}
+.cut2 h2 {margin-top: 240px; margin-left: 0;}
+.cut2 img {float: none;}
+.typing1, .typing2 {position: relative; font-size: 20px; width: 100%; text-align: center;}
+.cut1 h2:before {content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: #000; overflow: hidden; animation: fade 1s forwards; white-space: nowrap; animation-delay: 1s; opacity: 0;}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.cut2 h2:before {content: attr(data-text); position: absolute; width: 100%; height: 100%; color: #000; overflow: hidden; animation: blink2 1s forwards; white-space: nowrap; animation-delay: 4s !important; opacity: 0;}
+@keyframes blink2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.typing1 {margin-top: 225px; margin-left: 0px;}
+.skip {top: 88%; height: 40px; padding: 0 20px; font-size: 17px; border-radius: 10px; line-height: 44px;}
+
+.intro {width: 100%;}
+.intro p {font-size: 50px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,70%); width: 100%; margin:0; text-align: center;}
+
+
+/* about */
+.about {margin-top: 0; padding-bottom: 1700px;}
+.about > div {width: 100%; padding: 0 30px; box-sizing: border-box;}
+.about-bg {position: absolute !important; width: 100% !important; height: calc(100vh + 1700px);}
+.left, .right {float: none; width: 100%; text-align: center;}
+.left {height: 400px;}
+.left .img-bg1 {width: 250px; height: 330px; left: 50%; transform: translateX(-47%);}
+.left .img-bg2 {width: 250px; height: 330px; left: 50%; transform: translateX(-44%);}
+.skills {position: absolute;}
+
+.right {margin-top: 300px; padding-bottom: 30px;}
+.right h2 {margin: 50px 0 20px; font-size: 40px;}
+.right h2:after {width: 100%;}
+.right h3 {margin: 50px 0 20px; font-size: 30px;}
+.right h4 {margin-top: 10px;}
+.right table tr {text-align: left; word-break: normal;}
+.right table th {padding: 0; width: 30%;}
+.right table th, .right table td {padding: 5px 5px 5px 0;}
+.right .info {word-break: break-all;}
+.right .info strong:nth-of-type(2) {display: block; text-align: center; word-break: keep-all; margin-bottom: -20px;}
+.right .moon {width: 150px;}
+
+
+/* portfolio */
+.portfolio {position: relative; margin-top: 50px;}
+.portfolio > div {width: 100%; margin: 0 auto; padding: 80px 0px 0;}
+.portfolio > div h2 {font-size: 40px;}
+.portfolio > div h2:after {width: 90%;}
+.portfolio .box {position: relative; height: 100%; margin-bottom: 200px; box-sizing: border-box; overflow: hidden;}
+.portfolio .box .left {float: none; width: 100%; height: 100%; padding-top: 150px; margin-bottom: 250px;}
+.portfolio .box .left img {display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 90%; max-width: 500px; box-shadow:  5px 5px 10px #888;}
+.portfolio .box .right {float: none; width: 100%; padding: 50px 0;}
+.portfolio .box .right h3 {margin-top: 0;}
+.portfolio .box .right p {width: 85%; position: relative; left: 50%; transform: translateX(-50%); font-size: 17px; text-align: center; line-height: 160%; word-break: keep-all;}
+.portfolio .box .right .number {top: 0px;}
+.portfolio .box .right button {position: absolute; left: 50%; transform: translateX(-50%);}
+
+
+/* contact */
+.contact > div > div {width: 100%;}
+.contact > div > div h2 {font-size: 40px;}
+.contact .content {margin-top: -18px;}
+.contact .moon2 {top: 70%; z-index: -2;}
+.contact .rocket {width: 100px;}
+@keyframes rocket {
+    0% {
+        transform: translate(-50%,100%) rotateZ(45deg); opacity: 0;
+    }
+    25% {
+        transform: translate(100%,40%) rotateZ(75deg); opacity: 1;
+    }
+    50% {
+        transform: translate(300%,40%) rotateZ(115deg);
+    }
+    100% {
+        transform: translate(500%,100%) rotateZ(135deg); opacity: 0;
+    }
+}

@@ -1,0 +1,61 @@
+.main {padding: 0 30px;}
+.main > div {width: 100%;}
+.main > div img {width: 250px;}
+.cut1, .cut2 {position: relative; width: 100%; height: 250px;}
+.cut1 {float: left; margin-top: 60px;}
+.cut2 h2 {margin-top: 100px; margin-left: 53%;}
+.cut2 img {float: right;}
+.typing1, .typing2 {position: relative;  font-size: 34px; word-break: break-all;}
+.typing1 {margin-top: -150px; margin-left: 150px;}
+.typing2 {margin-top: -160px; margin-left: 200px;}
+
+.intro {width: 100%;}
+.intro p {font-size: 65px;}
+
+
+/* about */
+.about {margin-top: 0px; padding-bottom: 0px;}
+.about > div {width: 100%; padding: 0 30px; box-sizing: border-box;}
+.about-bg {position: absolute !important; width: 100% !important; height: 100vh;}
+.day-night {padding: 30px !important;}
+.left-img {position: absolute; left: 50%; transform: translateX(-50%);}
+.left img {width: 250px;}
+.left .img-bg1 {width: 250px; height: 330px;}
+.left .img-bg2 {width: 250px; height: 330px;}
+.skills {margin-top: 400px !important;}
+.right h3 {margin: 0; font-size: 30px;}
+.right h4 {margin-top: 10px;}
+.right table th {vertical-align: top;}
+.right table th, .right table td {padding: 5px 5px 5px 0;}
+
+
+/* portfolio */
+.portfolio {position: relative; margin-top: 50px;}
+.portfolio > div {width: 100%; margin: 0 auto; padding: 80px 0px 0;}
+.portfolio .box {position: relative; height: 100%; margin-bottom: 200px; padding-bottom: 30px; box-sizing: border-box; overflow: hidden;}
+.portfolio .box .left img {max-width: 500px;}
+.portfolio .box .right .number {top: -20px;}
+.portfolio .box .right button {position: relative; margin-top: 30px;}
+
+
+/* contact */
+.contact > div > div {width: 100%;}
+.contact .moon2 {top: 60%;}
+.contact .rocket {width: 170px;}
+@keyframes rocket {
+    0% {
+        transform: translate(-40%,50%) rotateZ(45deg); opacity: 0;
+    }
+    25% {
+        transform: translate(200%,-40%) rotateZ(75deg); opacity: 1;
+    }
+    50% {
+        transform: translate(350%,-50%) rotateZ(100deg);
+    }
+    75% {
+        transform: translate(550%,10%) rotateZ(125deg); opacity: 1;
+    }
+    100% {
+        transform: translate(650%,50%) rotateZ(145deg); opacity: 0;
+    }
+}
