@@ -1,27 +1,9 @@
 /* menu */
-var prevScroll = window.pageYOffset;
 
-window.onscroll = function(){
-    
-    var currentScroll = window.pageYOffset;
-    
-    if (prevScroll > currentScroll){
-        document.getElementById("navbar").style.top = "0";
-    } else {
-        document.getElementById("navbar").style.top = "-50px";
-    }
-    
-    prevScroll = currentScroll;
-    
-    var sc_zero = $(window).scrollTop();
-    if (sc_zero <= 800) {
-        document.getElementById("navbar").style.top = "-100px";
-    }
-}
 
-/* mobile menu */
+/* menu */
 const menu = document.querySelector('.ham');
-const menuSlide = document.querySelector('.mobile-menu');
+const menuSlide = document.querySelector('.menu');
 const main = document.querySelector('.list-main');
 const about = document.querySelector('.list-about');
 const portfolio = document.querySelector('.list-portfolio');

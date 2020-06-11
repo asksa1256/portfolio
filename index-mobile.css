@@ -1,13 +1,12 @@
 /* mobile_menu */
-header #navbar {display: none;}
 header .ham {display: block; top: 1%; right: 2%;}
-header .mobile-menu {display: flex; position: fixed; justify-content: center; right: -100%; top: 0; width: 100%; height: 100vh; background: #f6ce3c; z-index: 999; transition: 1s;}
-header .mobile-menu.active {right: 0;}
-header .mobile-menu .box {position: relative; left: 50%; top: 25%; transform: translate(-50%,-50%); width: 100%; height: 12.5vh; text-align: center;}
-header .mobile-menu .box h1 {position: absolute; top: -60%; left: 50%; transform: translateX(-50%); font-size: 4rem; color: rgba(255,255,255,.5); cursor: pointer; z-index: -1; transition: .5s;}
-header .mobile-menu .box h2 {font-size: 2rem; color: #000; transition: .5s;}
-header .mobile-menu .box:hover h1 {transform: translate(-50%,-30px);}
-header .mobile-menu .box:hover h2 {letter-spacing: 5px;}
+header .menu {display: flex; position: fixed; justify-content: center; right: -100%; top: 0; width: 100%; height: 100vh; background: #f6ce3c; z-index: 999; transition: 1s;}
+header .menu.active {right: 0;}
+header .menu .box {position: relative; left: 50%; top: 25%; transform: translate(-50%,-50%); width: 100%; height: 12.5vh; text-align: center;}
+header .menu .box h1 {position: absolute; top: -60%; left: 50%; transform: translateX(-50%); font-size: 4rem; color: rgba(255,255,255,.5); cursor: pointer; z-index: -1; transition: .5s;}
+header .menu .box h2 {font-size: 2rem; color: #000; transition: .5s;}
+header .menu .box:hover h1 {transform: translate(-50%,-30px);}
+header .menu .box:hover h2 {letter-spacing: 5px;}
 
 
 /* main */
@@ -81,7 +80,7 @@ header .mobile-menu .box:hover h2 {letter-spacing: 5px;}
 .portfolio .box .right h3 {margin-top: 0;}
 .portfolio .box .right p {width: 85%; position: relative; left: 50%; transform: translateX(-50%); font-size: 17px; text-align: center; line-height: 160%; word-break: keep-all;}
 .portfolio .box .right .number {top: 0px;}
-.portfolio .box .right button {position: absolute; left: 50%; transform: translateX(-50%);}
+.portfolio .box .right a {position: absolute; left: 50%; transform: translateX(-50%);}
 
 
 /* contact */

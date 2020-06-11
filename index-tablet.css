@@ -1,3 +1,4 @@
+/* main */
 .main {padding: 0 30px;}
 .main > div {width: 100%;}
 .main > div img {width: 250px;}
@@ -35,7 +36,7 @@
 .portfolio .box {position: relative; height: 100%; margin-bottom: 200px; padding-bottom: 30px; box-sizing: border-box; overflow: hidden;}
 .portfolio .box .left img {max-width: 500px;}
 .portfolio .box .right .number {top: -20px;}
-.portfolio .box .right button {position: relative; margin-top: 30px;}
+.portfolio .box .right a {position: relative; margin-top: 30px;}
 
 
 /* contact */
