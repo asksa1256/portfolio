@@ -214,10 +214,13 @@ header .menu .box:hover h2 {letter-spacing: 5px;}
 .portfolio .box .left {position: relative; float: left; width: 50%;}
 .portfolio .box .left img {display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 90%; max-width: 600px; margin-top: 20px; border-radius: 0px; box-shadow:  15px 15px 20px #c8c8c8, -15px -15px 20px #ffffff; transition: .5s;}
 .portfolio .box .left img:hover {transform: translateX(-50%) scale(1.1); box-shadow: none;}
-.portfolio .box .right {float: right; width: 45%; padding: 0;}
+.portfolio .box .right {position: relative; float: right; width: 45%; height: 340px; padding: 0;}
 .portfolio .box .right p {width: 90%; font-size: 18px; font-family: 'NEXON Lv1 Gothic OTF'; line-height: 25px; word-break: keep-all;}
 .portfolio .box .right .number {display: block; width: 120px; height: 120px; padding: 50px; border-radius: 50%; position: absolute; top: -50px; right: -21px; background: #f6ce3c; color: #fff; font-size: 120px; font-weight: bold; letter-spacing: -4px; line-height: 100%; z-index: -1;}
-.portfolio .box .right a {display: block; position: absolute; bottom: 10px; width: 100px; height: 50px; border: none; border-radius: 13px; background: #ebebeb; box-shadow:  5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff; font-size: 15px; font-family: 'NEXON Lv1 Gothic OTF'; line-height: 50px; text-align: center; transition: .5s; cursor: pointer;}
+.portfolio .box .right .btns {position: absolute; bottom: 0px;}
+.portfolio .box .right a {display: block; position: relative; float: left; width: 100px; height: 50px; border: none; border-radius: 13px; background: #ebebeb; box-shadow:  5px 5px 10px #c8c8c8, -5px -5px 10px #ffffff; font-size: 15px; font-family: 'NEXON Lv1 Gothic OTF'; line-height: 50px; text-align: center; transition: .5s; cursor: pointer;}
+.portfolio .box:nth-of-type(7) .right .btns a {margin: 0;}
+.portfolio .box .right a:last-child {margin-left: 30px;}
 .portfolio .box .right a:hover {background: #f6ce3c; box-shadow: none;}
 
 
